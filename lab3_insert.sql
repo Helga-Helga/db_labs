@@ -1,0 +1,42 @@
+-- Fill tables
+INSERT INTO routes (route_id, route_code) VALUES (1, '1');
+INSERT INTO routes (route_id, route_code) VALUES (2, '1T');
+INSERT INTO routes (route_id, route_code) VALUES (3, '2');
+INSERT INTO routes (route_id, route_code) VALUES (4, '5');
+INSERT INTO routes (route_id, route_code) VALUES (5, '6');
+INSERT INTO routes (route_id, route_code) VALUES (6, '7');
+INSERT INTO routes (route_id, route_code) VALUES (7, '9');
+INSERT INTO routes (route_id, route_code) VALUES (8, '11');
+INSERT INTO routes (route_id, route_code) VALUES (9, '12');
+INSERT INTO routes (route_id, route_code) VALUES (10, '14');
+
+INSERT INTO stations (station_id, station_name) VALUES (1, 'Odessa square');
+INSERT INTO stations (station_id, station_name) VALUES (2, 'Goloseevskaya metro station');
+INSERT INTO stations (station_id, station_name) VALUES (3, 'Mikhailovskaya Borschagovka');
+INSERT INTO stations (station_id, station_name) VALUES (4, 'Bulgakov street');
+INSERT INTO stations (station_id, station_name) VALUES (5, 'Shulyavskaya metro station');
+INSERT INTO stations (station_id, station_name) VALUES (6, 'Izyumskaya street');
+INSERT INTO stations (station_id, station_name) VALUES (7, 'Railway station "Сentral"');
+INSERT INTO stations (station_id, station_name) VALUES (8, 'Sosyury street');
+INSERT INTO stations (station_id, station_name) VALUES (9, 'Troyeshchyna');
+INSERT INTO stations (station_id, station_name) VALUES (10, 'Lviv square');
+INSERT INTO stations (station_id, station_name) VALUES (11, 'Tubinstitute');
+INSERT INTO stations (station_id, station_name) VALUES (12, 'Alekseevskaya street');
+INSERT INTO stations (station_id, station_name) VALUES (13, 'Railway station "Pivdennyy"');
+
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (1, 1, 1, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (2, 1, 2, 2);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (3, 2, 3, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (4, 3, 4, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (5, 3, 5, 18);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (6, 4, 6, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (7, 4, 7, 6);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (8, 5, 8, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (9, 5, 9, 13);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (10, 6, 7, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (11, 6, 10, 6);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (12, 7, 4, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (13, 9, 6, 0);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (14, 9, 11, 13);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (15, 9, 12, 8);
+INSERT INTO link_routes_stations (id, route_id, station_id, delta_time) VALUES (16, 9, 13, 12);
